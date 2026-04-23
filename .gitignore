@@ -1,0 +1,7 @@
+.env
+*.sql
+.DS_Store
+thumbs.db
+wp-content/uploads/
+*.log
+.docker/
