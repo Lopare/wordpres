@@ -3,7 +3,7 @@ services:
     image: mariadb:11
     container_name: wp_db
     volumes:
-      - db_data:/var/lib/mysql  # ✅ Исправлено
+      - db_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -28,6 +28,6 @@ services:
     restart: unless-stopped
 
 volumes:
-  db_data:    # ✅ Добавлено двоеточие
+  db_data:
   wp_data:
 
